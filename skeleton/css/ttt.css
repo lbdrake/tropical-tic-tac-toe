@@ -1,0 +1,109 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+body {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+  /*
+  Get rid of native styling. Read more here:
+  http://css-tricks.com/almanac/properties/a/appearance/
+  */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Clearfix */
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: fantasy;
+  color: DarkBlue;
+}
+
+
+
+.ttt-board {
+  border: 10px solid DarkBlue;
+  width:270px;
+  height:270px;
+  margin: auto;
+  background-image: url(http://www.lawyersweekly.com.au/images/LW_Media_Library/Fiji.jpg);
+}
+
+.ttt-board ul {
+  /*float: left;*/
+  width:270px;
+  height:270px;
+  margin: 0px;
+}
+
+.ttt-board li {
+  background-color: grey;
+  float: left;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  border: 10px solid black;
+  opacity: 0.8;
+  display: block;
+  margin: 0px;
+  font-family: fantasy;
+  font-size: 48px;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.ttt-board li:hover {
+  background-color: yellow;
+}
+
+.win-message {
+  font-size: 48px;
+  font-family: fantasy;
+  color: DarkOrange;
+  font-weight: 700;
+}
